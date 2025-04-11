@@ -6,22 +6,35 @@
     <title>Plated Poetry</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Plated Poetry</h1>
+        <h1>PLATED POETRY</h1>
         <p>Where a dish is a verse of masterpiece</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
         </ul>
     </nav>
 
     <h2>Welcome to Plated Poetry!</h2>
+    <h1>🍴 Choose a Recipe</h1>
+
+  <select id="recipeSelector">
+    <option value="">-- Select a Recipe --</option>
+    <option value="pasta">Creamy Garlic Pasta</option>
+    <option value="tacos">Beef Tacos</option>
+    <option value="salad">Avocado Salad</option>
+  </select>
+
+  <div id="recipeDisplay" class="recipe-container"></div>
+
+  
+  <script src="script.js"></script>
 </body>
 </html>
