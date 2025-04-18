@@ -1,5 +1,5 @@
 //For the validation of the contact information form
-const form = document.getElementById('container');
+const form = document.getElementById('contactForm');
 
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -7,14 +7,14 @@ const usernameInput = document.getElementById('message');
 
 const nameError = document.getElementById('nameError');
 const emailError = document.getElementById('emailError');
+const usernameError = document.getElementById('usernameError')
 
 const successMessage = document.getElementById('successMessage');
-const clearMessage = document.getElementById('clear-btn');
 
 form.addEventListener('submit', function(event) {
     nameError.textContent = '';
     emailError.textContent = '';
-    confirmEmailError.textContent = '';
+    usernameError.textContent = '';
     successMessage.textContent = ''; 
 
     let isValid = true;
