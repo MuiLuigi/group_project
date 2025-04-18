@@ -25,15 +25,15 @@
       <form id="contactForm" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
         <h1>Contact Us</h1>
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name"  />
+        <input type="text" id="name" name="name" required />
         <span class="error" id="nameError"></span>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"  />
+        <input type="email" id="email" name="email" required />
         <span class="error" id="emailError"></span>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" ></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
         <span class="error" id="usernameError"></span>
 
         <button type="submit">Send Message</button>
