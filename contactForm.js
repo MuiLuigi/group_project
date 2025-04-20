@@ -44,7 +44,7 @@ form.addEventListener('submit', function(event) {
 
     //If all inputs are valid, show success message
     if (isValid) {
-        successMessage.textContent = 'The information has been saved and the form submitted successfully!';
+        successMessage.textContent = 'The message has been sent successfully!';
     }
 
     event.preventDefault(); 
