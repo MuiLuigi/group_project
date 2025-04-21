@@ -49,8 +49,8 @@ form.addEventListener('submit', function(event) {
             const data = fileReader.result;
             blog.push({ id: Date.now(), blogTitle, blogContent, image: data });
             localStorage.setItem('blog', JSON.stringify(blog));
-            successMessage.textContent = 'The blog has been successfully posted!';
-            window.location.href = 'post.html';
+            successMessage.textContent = 'The dish has been successfully posted!';
+            window.location.href = 'updateRecipe.html';
         }
         fileReader.readAsDataURL(images.files[0]);
     }
