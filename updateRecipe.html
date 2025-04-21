@@ -6,6 +6,29 @@
     <title>Edit Recipes</title>
 </head>
 <body>
-    
+    <select id="saved-blogs">
+        <option>Please select the dish you would like to edit or delete</option>
+    </select>
+
+    <form id="editor">
+        <label for="name">Please update the name of the dish: </label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
+        <br>
+        <br>
+        
+
+        <label for="username">Please make the changes on the recipe of your dish: </label>
+        <textarea id="username" placeholder="Content"></textarea>
+        <span class="error" id="usernameError"></span>
+        <br>
+        <br>
+
+        <button type="submit">Save Changes</button>
+
+        <button type="button" id="delete">Delete Recipe</button>
+
+        <a href="index.html" class="button">Home</a>
+    </form>
 </body>
 </html>
