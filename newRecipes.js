@@ -23,20 +23,20 @@ form.addEventListener('submit', function(event) {
     let isValid = true;
 
     if (nameInput.value.trim() === '') {
-        nameError.textContent = 'Please enter the title of your post';
+        nameError.textContent = 'Please enter the name of your post/dish';
         event.preventDefault();  //Prevents form submission
         isValid = false;
     }
 
     if (usernameInput.value.trim() === '') {
-        usernameError.textContent = 'Please enter the content of your post';
+        usernameError.textContent = 'Please enter the recipe for your dish';
         event.preventDefault();  //Prevents form submission
     isValid = false;
     }
 
     //If all inputs are valid, show success message
     if (isValid) {
-        successMessage.textContent = 'The post has been added successfully!';
+        successMessage.textContent = 'The recipe has been posted successfully!';
     } 
 
     const blogTitle = nameInput.value;
