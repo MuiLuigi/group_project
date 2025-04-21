@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+      <header>
         <h1>PLATED POETRY</h1>
         <p>Where a dish is a verse of masterpiece</p>
     </header>
@@ -17,27 +17,35 @@
     <nav>
         <ul>
             <li><a href="index.html">HOME</a></li>
+            <li><a href="newRecipe.html">NEW RECIPE</a></li>
+            <li><a href="updateRecipe.html">UPDATE RECIPE</a></li>
             <li><a href="aboutus.html">ABOUT US</a></li>
-            <li><a href="#contact.html">CONTACT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </nav>
 
     <h2>Welcome to Plated Poetry!</h2>
-    <h1>🍴 Choose a Recipe</h1>
 
-  <select id="recipeSelector">
-    <option value="">-- Select a Recipe --</option>
-    <option value="pasta">Creamy Garlic Pasta</option>
-    <option value="tacos">Beef Tacos</option>
-    <option value="salad">Avocado Salad</option>
-  </select>
+          <div class="recipe-section">
+            <h1>🍴 Choose a Recipe</h1>
 
-  <div id="recipeDisplay" class="recipe-container"></div>
+            <select id="recipeSelector">
+              <option value="">-- Select a Recipe --</option>
+              <option value="pasta">Creamy Garlic Pasta</option>
+              <option value="tacos">Beef Tacos</option>
+              <option value="salad">Avocado Salad</option>
+            </select>
 
-  <a href="newRecipe.html" class="button">Create New Recipe</a>
-    <a href="updateRecipe.html" class="button">Edit Recipes</a>
+            <div id="recipeDisplay" class="recipe-container">
+              <!-- Recipe will be injected here -->
+            </div>
 
-  
+            <div class="button-group">
+              <a href="newRecipe.html" class="button">Create New Recipe</a>
+              <a href="updateRecipe.html" class="button">Edit Recipes</a>
+            </div>
+          </div>
+            
   <script src="script.js"></script>
 </body>
 </html>

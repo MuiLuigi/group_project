@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Recipes</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <script defer src="editRecipe.js"></script>
 </head>
 <body>
-    <select id="saved-blogs">
-        <option>Please select the dish you would like to edit or delete</option>
-    </select>
+    <header>
+        <h1>PLATED POETRY</h1>
+        <p>Where a dish is a verse of masterpiece</p>
+    </header>
 
-    <form id="editor">
-        <label for="name">Please update the name of the dish: </label>
-        <input type="text" id="name" name="name">
-        <span class="error" id="nameError"></span>
-        <br>
-        <br>
-        
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="newRecipe.html">NEW RECIPE</a></li>
+            <li><a href="updateRecipe.html">UPDATE RECIPE</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
 
-        <label for="username">Please make the changes on the recipe of your dish: </label>
-        <textarea id="username" placeholder="Content"></textarea>
-        <span class="error" id="usernameError"></span>
-        <br>
-        <br>
+    <h2>Edit or Delete a Recipe</h2>
 
-        <button type="submit">Save Changes</button>
+        <div class="dropdown-container">
+            <select id="saved-blogs">
+                <option>Please select the dish you would like to edit or delete</option>
+            </select>
+        </div>
 
-        <button type="button" id="delete">Delete Recipe</button>
+        <form id="editor" class="form-box">
+            <label for="name">Please update the name of the dish:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
 
-        <a href="index.html" class="button">Home</a>
-    </form>
+            <label for="username">Please make the changes on the recipe of your dish:</label>
+            <textarea id="username" placeholder="Content"></textarea>
+            <span class="error" id="usernameError"></span>
+
+            <button type="submit">Save Changes</button>
+            <button type="button" id="delete">Delete Recipe</button>
+
+            <a href="index.html" class="button">Home</a>
+        </form>
 </body>
 </html>
