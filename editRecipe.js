@@ -45,6 +45,7 @@ window.onload = function() {
     
         localStorage.setItem('blog', JSON.stringify(blog));
         successMessage.textContent = 'The dish post has been updated successfully!'
+        alert('The dish post has been updated successfully!');
     });
     
     deleteButton.addEventListener('click', function() {
