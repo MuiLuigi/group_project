@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="recipes.js"></script>
+</head>
+<body>
+    <section id="contact">
+        <h2>Create New Recipes</h2>
+        <div class="form-container">
+            <form id="formRegistration">
+                <label for="name">Please enter the name of the dish: </label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="nameError"></span>
+                <br>
+                <br>
+                
+        
+                <label for="username">Please write the recipe: </label>
+                <textarea id="username" placeholder="Recipe"></textarea>
+                <span class="error" id="usernameError"></span>
+                <br>
+                <br>
+
+                <p>You can add an image for your post if you like. Click "Choose File" to add a file of your image for your post</p>
+                <input type="file" id="image" accept="image/*">
+        
+                <div class="flex-container">
+                    <div class="flex-item"><input type="submit"></input></div>
+                    <div class="flex-item"><input id="clear-btn" type="reset"></input></div>
+                </div>
+                <a href="index.html" class="button">Home</a>
+            </form>
+            <p id="successMessage" class="success"></p>
+            <p id="clear"></p>
+        
+            </div>
+    </section>
+</body>
+</html>
