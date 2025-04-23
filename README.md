@@ -1,3 +1,9 @@
+Individual presentation on YouTube:
+Fahad https://m.youtube.com/watch?si=jS7_xffWpK3BifkG&v=1gwEq0maWIM&feature=youtu.be
+Geoffrey https://youtube.com/shorts/JTbAcdpL7kQ?si=kA28jkF5FV8EXtLA
+
+
+
 Plated Poetry
 
 Plated Poetry is a recipe-based website that offers users the ability to explore a variety of recipes, learn how to cook them, and connect with the team behind the website. 
